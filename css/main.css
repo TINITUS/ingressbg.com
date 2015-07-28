@@ -1,0 +1,43 @@
+body{font-family: 'Play', sans-serif;}
+.navbar-brand h1.headingMain{ font-size: 100%; display: inline-block; padding-top: 0; margin-top:0;}
+.navbar-brand img.logo{width: 50px;}
+.navbar-nav .dropdown li.dropdown-header{background-color:#e7e7e7;}
+.navbar-nav .dropdown li a img{width:50px;}
+
+.jumbotron#beginning { position: relative; overflow: hidden}
+.jumbotron#beginning > #mainLogo{	
+	position: absolute; 
+	width: 200%; height:200%;
+	top:0px; left: -15%;
+	z-index: 1;
+	background: url(../imgs/ingressbgLogo.png) 0 0 no-repeat;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+.jumbotron#beginning .container{ z-index: 2; position: relative; background-color: rgba(49, 49, 49, 0.5); border-radius: 10px; border:1px solid #2e2e2e; color: white;}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.jumbotron#beginning > #mainLogo{
+		width: 150%; height:150%;
+		top: -10%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.jumbotron#beginning > #mainLogo{
+		width: 150%; height:150%;
+		top: -20%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.jumbotron#beginning > #mainLogo{
+		width: 150%; height:150%;
+		top: -70%;
+	}
+}

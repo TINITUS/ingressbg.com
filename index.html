@@ -32,16 +32,22 @@
     	<div class="collapse navbar-collapse navbar-ex1-collapse">
     		<ul class="nav navbar-nav">
     			<li class="active"><a href="#begining">Начало</a></li>
-    			<li><a href="#">Основи</a></li>
+    			<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Основи<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#aboutIngress">За Играта</a></li>
+                        <li><a href="#howToStart">Как да започнем</a></li>
+                    </ul>
+                </li>
     			<li class="dropdown">
     				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Инвентар<b class="caret"></b></a>
     				<ul class="dropdown-menu">
-    					<li class="dropdown-header"><h5>Оръжия</h5></li>    					
+    					<li class="dropdown-header"><h5><a href="#weapons">Оръжия</a></h5></li>    					
     					<li><a href="#"><img src="imgs/inventory/xmlpBurster.png"/>XMP Бърстери (бомби)</a></li>
     					<li><a href="#"><img src="imgs/inventory/ultraStrike.png"/>Ултра Страйк</a></li>
     					<li><a href="#"><img src="imgs/inventory/jarvisVirus.png"/>Джарвис Вирус</a></li>
     					<li><a href="#"><img src="imgs/inventory/adaRef.png"/>АДА Рефрактор</a></li>
-						<li class="dropdown-header"><h5>Портални Модове</h5></li>
+						<li class="dropdown-header"><h5><a href="#mods">Портални Модове</a></h5></li>
     					<li><a href="#"><img src="imgs/inventory/resonator.png"/>Резонатори</a></li>
     					<li><a href="#"><img src="imgs/inventory/portalShield.png"/>Портални щитове</a></li>
     					<li><a href="#"><img src="imgs/inventory/forceAmp.png"/>Усилватели на мощност</a></li>
@@ -129,9 +135,36 @@
     			<h2 id="osnovi">
 					Основи
     			</h2>
-    			<p>
-    				
-    			</p>
+    			<div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="aboutIngress">
+                            За Играта
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="howToStart">
+                            Как да започнем?
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
     		</div>
     	</div>
     	<div class="row">
@@ -144,9 +177,93 @@
 		    			<h3 id="weapons">
 							Оръжия
 		    			</h3>
-						
+						<div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 		    		</div>
     			</div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="mods">
+                            Портални Модове
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="utils">
+                            Помощни средства
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="others">
+                            Други
+                        </h3>                        
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
     		</div>
     	</div>
     	<div class="row">
@@ -155,7 +272,12 @@
 					Действия
     			</h2>
     			<p>
-    				
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     			</p>
     		</div>
     	</div>

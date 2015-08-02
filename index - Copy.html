@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ingress Bulgaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <img src="imgs/ingressLogoForButton.png" height="22" width="22">
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <span>
+                    <img src="imgs/ingressbgLogo-80px.png" class="logo"/>
+                </span>
+                <h1 class="headingMain">Ингресс България</h1>
+            </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#begining">Начало</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Основи<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#aboutIngress">За Играта</a></li>
+                        <li><a href="#howToStart">Как да започнем?</a></li>
+                        <li class="dropdown-header"><h5><a href="#therms">Основни понятия</a></h5></li>
+                        <li><a href="#">eXotic Matter - XM</a></li>
+                        <li><a href="#">Access Point - AP</a></li>
+                        <li><a href="#">Portal</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Field</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Инвентар<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><h5><a href="#weapons">Оръжия</a></h5></li>                     
+                        <li><a href="#"><img src="imgs/inventory/xmlpBurster.png"/>XMP Бърстери (бомби)</a></li>
+                        <li><a href="#"><img src="imgs/inventory/ultraStrike.png"/>Ултра Страйк</a></li>
+                        <li><a href="#"><img src="imgs/inventory/jarvisVirus.png"/>Джарвис Вирус</a></li>
+                        <li><a href="#"><img src="imgs/inventory/adaRef.png"/>АДА Рефрактор</a></li>
+                        <li class="dropdown-header"><h5><a href="#mods">Портални Модове</a></h5></li>
+                        <li><a href="#"><img src="imgs/inventory/resonator.png"/>Резонатори</a></li>
+                        <li><a href="#"><img src="imgs/inventory/portalShield.png"/>Портални щитове</a></li>
+                        <li><a href="#"><img src="imgs/inventory/forceAmp.png"/>Усилватели на мощност</a></li>
+                        <li><a href="#"><img src="imgs/inventory/linkAmp.png"/>Усилватели за връзки</a></li>
+                        <li><a href="#"><img src="imgs/inventory/multiHack.png"/>Мултихак</a></li>
+                        <li><a href="#"><img src="imgs/inventory/heatSink.png"/>Охладители</a></li>
+                        <li><a href="#"><img src="imgs/inventory/turret.png"/>Оръдейна кула</a></li>
+                        <li class="dropdown-header"><h5>Помощни средства</h5></li>
+                        <li><a href="#"><img src="imgs/inventory/capsule.png"/>Капсули</a></li>
+                        <li><a href="#"><img src="imgs/inventory/powerCube.png"/>Кубове с XM</a></li>
+                        <li class="dropdown-header"><h5>Други</h5></li>
+                        <li><a href="#"><img src="imgs/inventory/media.png">Медиа файлове</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Действия<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><h5>Действия с предмети</h5></li>
+                        <li><a href="#"><img src="imgs/actions/deployResonators.png"/>Поставяне на Резонатор</a></li>
+                        <li><a href="#"><img src="imgs/actions/deployResonators.png"/>Подмяна на Резонатор</a></li>
+                        <li><a href="#"><img src="imgs/actions/rechargeResonators.png"/>Презареждане на Резонатор</a></li>
+                        <li><a href="#"><img src="imgs/actions/deployMods.png"/>Поставяне на Модове</a></li>
+                        <li><a href="#"><img src="imgs/actions/destroyResonators.png"/>Използване на XMP Бърстери</a></li>
+                        <li><a href="#"><img src="imgs/actions/recycleItems.png"/>Рециклиране на предмети</a></li>
+                        <li><a href="#"><img src="imgs/actions/dropItems.png"/>Хвърляне на предмети</a></li>
+                        <li><a href="#"><img src="imgs/actions/rechargeResonators.png"/>Отдалечено презареждане</a></li>
+                        <li class="dropdown-header"><h5>Действия с Портали</h5></li>
+                        <li><a href="#"><img src="imgs/actions/hackPortal.png"/>Хакване на портал</a></li>
+                        <li><a href="#"><img src="imgs/actions/linkPortals.png"/>Линкване на портали</a></li>
+                        <li><a href="#"><img src="imgs/actions/deployResonators.png"/>Повишаване нивото на Портал</a></li>
+                        <li><a href="#"><img src="imgs/actions/targetPortal.png"/>Таргет на портал</a></li>                     
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Социални мрежи<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"><h5>Просветлени</h5></li>
+                        <li><a href="#"><img src="imgs/actions/deployResonators.png"/>Форум</a></li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/communities/103298215202970007103" target="_blank">
+                                <img src="imgs/actions/google+.png"/>Googe+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/378931108926155/" target="_blank">
+                                <img src="imgs/actions/facebook.png"/>Facebook
+                            </a>
+                        </li>
+                        <li class="dropdown-header"><h5>Съпротива</h5></li>
+                        <li><a href="#"><img src="imgs/actions/deployResonators.png"/>Форум</a></li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/116793422524543433978/posts" target="_blank">
+                                <img src="imgs/actions/google+.png"/>Googe+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/ingress.resistance.bul/" target="_blank">
+                                <img src="imgs/actions/facebook.png"/>Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="jumbotron" id="beginning">
+        <div id="mainLogo"></div>   
+        <div class="container">
+            <h1 id="begining">Ингерсс България - Ръководство</h1>
+            <p>Добре дошли в света, ръководен от странната материя - eXotic Matter! Тук ще намерите информация за играта, съвети и какво трябва да знаете като начинаещи.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="alert alert-warning">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>                   
+                        Няма мой и няма твой портал! Те са ваши само временно, откакто ги превземете, докато някой от врага не ги счупи. Не се
+                        сърдете, ако ви счупят портала или порталите или пък го правят редовно - играта се базира на това! Печели по-упорития!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 id="osnovi">
+                    Основи
+                </h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="aboutIngress">
+                            За Играта
+                        </h3>
+                        <p>
+                           Ingress е игра в стил "Вмъкната/Добавена/ реалност"/Augmented Reality Game/. Създадена от подразделение на Гугъл наречено Niantic Labs, тя излиза на 12ти Ноември, 2012. Това е една завладяваща шпионска история пренесена на реалната карта на света. Целта на играта е да се посещават физически места - "портали", обикновено свързани с нещо интересно - Паметник, паметна плоча, графити, природно образувание и т.н. (линк за Ниантик правилата за портали). 
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="howToStart">
+                            Как да започнем?
+                        </h3>
+                        <p>
+                            Изиграйте въвеждащата мисия. Изиграйте я още един - два пъти. Тя ви показва основните действия, които можете да извършвате в играта. А по-точно Hack, Deploy, Link, Linking for Field. Всяко от тези действия, а и всички действия като цяло в играта, изискват да имате поределено количество XM. Той се набавя от кристалчетата разпръснати по цялата карта, но концентрирани основно около порталите. 
+                            Като ниско ниво играч гореспоменатите действия са основните, с които да натрупате Access Points, необходими за получаване на по високо ниво на достъп. Нивата на достъп са от 1 до 16.  
+                        </p>                        
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img width="100px" class="media-object" src="https://lh5.ggpht.com/uNe8FMmiO66tk2M6guFlhLOZSpjIeBD3BG69wafOUFmLxybt1Ewr2Tv2UQukTfAvBiBb=h900" alt="Image">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Опознай Скенера</h4>
+                            <p>Най-важния инструмент на агента е неговия скенер. Опознайте добре скенер-а. Ето и основните неща:</p>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img src="imgs/scanner/scannerAPbar.png" alt="Scanner AP bar" class="media-object img-responsive">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Access Points прогрес</h4>
+                                    <p>Този бар се изпълва когато печелите АP и показва колко сте близо до следващото ниво.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>Опознай Скенера</h3>
+                        <p>Най-важния инструмент на агента е неговия скенер. Опознайте добре скенер-а. Ето и основните неща:</p>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerAPbar.png" alt="Scanner AP bar" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">Access Points прогрес</h4>                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Този бар се изпълва когато печелите АP и показва колко сте близо до следващото ниво.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerXMbar.png" alt="Scanner XM bar" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">XM резерви</h4>                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Този бар показва колко XM сте събрали.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerEarnedAP.png" alt="Scanner Earned AP" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">Спечелени АP</h4>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Цъкнете на ник-а си за да видите вашите AP. Първото число е количеството което сте въбрали до моммента. Второто число е количеството, което ви трябва за следващото ниво.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerALvl.png" alt="Scanner Agent Level" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">Ниво на достъп/Ниво/</h4>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Нивото ви на достъп в момента.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerLocation.png" alt="Scanner Location" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">Вашата локация по GPS.</h4>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Позицията ви на карта според GPS координатите на устройството.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerActionRange.png" alt="Scanner Аction Range" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">Обхват на действие</h4>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Радиусът, в който можете да взаимодействате с портали или свободни предмети. 
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerCOMM.png" alt="COMM" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">COMM</h4>                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                COMM или комуникатор - позволява ви да общувате с други агенти, да преглеждате предупредителни съобщения и да следите общата активност във вашия регион.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/scanner/scannerXM.png" alt="Scanner XM" class="img-responsive">
+                                                <div class="caption">
+                                                    <h4 id="xm">еXotic Matter/XM</h4>                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Блещукащите частици са Екзотична Материя(XM). Събирайте ги за да имате енергия за работа с Порталите.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <div class="thumbnail">
+                                        <img src="imgs/scanner/scannerXM.png" alt="Scanner XM" class="media-object img-responsive">
+                                    </div>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">еXotic Matter/XM</h4>
+                                    <p>Блещукащите частици са Екзотична Материя(XM). Събирайте ги за да имате енергия за работа с Порталите.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="therms">
+                            Основни термини.
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/XMparticle.png" class="img-responsive" alt="XM">
+                                                <div class="caption">
+                                                    <h4 id="xm">eXotic Matter/XM</h4>                                                
+                                                </div>
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                             По време на опитите за откриване на Хигсс Бозон-а, учените от ЦЕРН откриват тайнствена материя - еXotic 
+                                             Matter - екзотична материя. Това е XM - малките бели кристалчета които събирате движейки се по улиците, 
+                                             и които се намират в по-големи количества около порталите. Имате да го наречем “резервоар” в който 
+                                             събирате XM-a и той става с все по-голям капацитет с преминаването в всяко следващо ниво. Почти всяко 
+                                             действие, което извършвате в играта има своята “цена” в XM. За това е важно да го следите. Когато XM-a 
+                                             ви свърши, или трябва да се разходите да съберете още, или трябва да използвате Кубове от инвентара. 
+                                             Кубовете не са от най-честите предмети така, че ги използвайте разумно. Ако ви свършат кубовете може да 
+                                             си набавите XM и чрез рециклиране на предмети от инвентара. Не рециклирайте кубове-безумно е :)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="thumbnail">
+                                                <img src="imgs/XMparticle.png" class="img-responsive" alt="XM">
+                                                <div class="caption">
+                                                    <h4 id="xm">Access Points/AP</h4>                                                
+                                                </div>
+                                            </div>                                        
+                                        </td>
+                                        <td>
+                                             Почти всяко действие в играта ви носи точки, а натрупаните точки определят нивото на играча. От своя страна нивото 
+                                             на играча определя до кое ниво предмети може да използва. Естествено по високото ниво всичко става по-мощно и
+                                             по-яко.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 id="inventory">
+                    Инвентар
+                </h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="weapons">
+                            Оръжия
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="mods">
+                            Портални Модове
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="utils">
+                            Помощни средства
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3 id="others">
+                            Други
+                        </h3>                        
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Име</th>
+                                        <th>Описание</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 id="osnovi">
+                    Действия
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
